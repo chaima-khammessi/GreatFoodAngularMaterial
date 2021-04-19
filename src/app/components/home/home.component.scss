@@ -1,0 +1,21 @@
+.navbar{
+    justify-content: space-between;
+    .shop-name{
+        cursor: pointer;
+    }
+    .myspan{
+        cursor: pointer;
+        padding-right: 1rem;
+        .icon{
+            position: relative;
+            top: 5px;
+        }
+    }
+}
+.card{
+    max-width: 80%;
+    margin-top: 20px;
+    .action{
+        text-align: center;
+    }
+}

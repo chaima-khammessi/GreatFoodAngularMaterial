@@ -1,0 +1,26 @@
+<mat-toolbar color="primary" class="navbar">
+    <div class="shop-name">Great Food</div>
+    <span class="myspan">
+        <mat-icon class="icon" [matBadge]="productsInCart" matBadgeColor="warn" matBadgeSize="small">shopping_cart</mat-icon>Panier
+    </span>
+</mat-toolbar>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let product of produts">
+            <div class="col-md-3">
+                <mat-card class="card">
+                    <img mat-card-image src="../../../assets/images/{{product.image}}"  alt="">
+                    <mat-card-content>
+                        <p>{{product.category}}</p>
+                        <p><b>{{product.nom}}</b></p>
+                        <p>{{product.prix}}</p>
+                    </mat-card-content>
+                    <mat-card-actions class="action">
+                        <button mat-raised-button color="primary" (click)="addToCard()"> <mat-icon>add_shopping_cart</mat-icon> J'achete</button>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+        
+    </div>
+</div>

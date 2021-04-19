@@ -1,0 +1,58 @@
+<mat-toolbar color="primary" class="navbar">
+    <div class="shop-name">Great Food</div>
+    <span class="myspan">
+        <mat-icon class="icon" [matBadge]="productsInCart" matBadgeColor="warn" matBadgeSize="small">shopping_cart
+        </mat-icon>Panier
+    </span>
+</mat-toolbar>
+
+<div class="container">
+    <div class="row">
+        <mat-horizontal-stepper>
+            <!--STEP 1 -->
+            <mat-step label="Vos informations personnelles">
+                <mat-form-field color="accent">
+                    <mat-label>Nom</mat-label>
+                    <input type="text" matInput required name="" id="">
+                    <mat-hint align="end">Minimum 5 caractére</mat-hint>
+                </mat-form-field><br>
+                <mat-form-field color="accent">
+                    <mat-label>Prénom</mat-label>
+                    <input type="text" matInput required name="" id="">
+                    <mat-hint align="end">Minimum 5 caractére</mat-hint>
+                </mat-form-field><br>
+                <mat-form-field color="accent">
+                    <mat-label>Téléphone</mat-label>
+                    <input type="text" matInput required name="" id="">
+                </mat-form-field><br>
+                <button mat-button color="primary" matStepperNext>Suivant</button>
+            </mat-step>
+            <!--STEP 2-->
+            <mat-step label="Détails de l'adresse de l'avraison">
+                <mat-form-field color="accent">
+                    <mat-label>Adresse</mat-label>
+                    <input type="text" matInput required name="" id="">
+                    <mat-hint align="end">Minimum 6 caractére</mat-hint>
+                </mat-form-field><br>
+                <mat-form-field color="accent">
+                    <mat-label>Ville</mat-label>
+                    <input type="text" matInput required name="" id="">
+                    <mat-hint align="end">Minimum 6 caractére</mat-hint>
+                </mat-form-field><br>
+                <mat-form-field color="accent">
+                    <mat-label>Postal</mat-label>
+                    <input type="text" matInput required name="" id="">
+                </mat-form-field><br>
+                <button mat-button color="accent" matStepperPrevious>Président</button>
+                <button mat-button color="primary" matStepperNext>Suivant</button>
+            </mat-step>
+            <!--STEP 3 -->
+            <mat-step label="Passer la commande">
+                <mat-checkbox color="primary">Le confirme</mat-checkbox><br>
+                <button mat-button color="accent" matStepperPrevious>Président</button>
+                <button mat-button color="primary">Commander</button>
+
+            </mat-step>
+        </mat-horizontal-stepper>
+    </div>
+</div>
